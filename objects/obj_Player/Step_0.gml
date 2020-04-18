@@ -1,7 +1,7 @@
-var right = (keyboard_check(ord("D")) || keyboard_check(vk_right))
-var left = (keyboard_check(ord("A")) || keyboard_check(vk_left))
-var up = (keyboard_check(ord("W")) || keyboard_check(vk_up))
-var down = (keyboard_check(ord("S")) || keyboard_check(vk_down))
+var right = keyboard_check(ord("D")) || keyboard_check(vk_right) || gamepad_axis_value(0, gp_axislh) > 0.25
+var left = keyboard_check(ord("A")) || keyboard_check(vk_left) || gamepad_axis_value(0, gp_axislh) < -0.25
+var up = keyboard_check(ord("W")) || keyboard_check(vk_up) || keyboard_check(vk_space) || gamepad_button_check(0, gp_face1)
+var down = keyboard_check(ord("S")) || keyboard_check(vk_down) || gamepad_button_check(0, gp_face3)
 
 var board = instance_nearest(x, bbox_bottom, obj_Skateboard)
 

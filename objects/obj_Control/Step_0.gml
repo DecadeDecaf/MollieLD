@@ -1,6 +1,6 @@
 var f = keyboard_check_pressed(ord("F"))
 var m = keyboard_check_pressed(ord("M"))
-var space = keyboard_check_pressed(vk_space)
+var space = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
 
 if (f) {
 	var full = window_get_fullscreen()
@@ -17,7 +17,7 @@ if (m) {
 		audio_master_gain(1)
 		global.Muted = false
 	} else {
-		audio_master_gain(1)
+		audio_master_gain(0)
 		global.Muted = true
 	}
 }
