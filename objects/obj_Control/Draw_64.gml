@@ -26,10 +26,20 @@ if (room == rm_Menu) {
 		case 8: txt = "Upstairs?"; break
 		case 9: txt = "Ollie Oop"; break
 		case 10: txt = "Speed"; break
-		case 11: txt = "Keep It Alive"; break
+		case 11: txt = "Wait For It"; break
+		case 12: txt = "Keep It Alive"; break
+		case 13: txt = "Tricks"; break
+		case 14: txt = "Race"; break
 	}
 	draw_set_color($858585)
 	draw_text_transformed(960, 20, "Level " + string(global.Level), 0.333, 0.333, 0)
 	draw_set_color($5D5D5D)
 	draw_text_transformed(960, 60, txt, 0.25, 0.25, 0)
+	var minutes = string(floor(global.Timer / 60))
+	var seconds = string_format(global.Timer % 60, 1, 1)
+	if (string_length(seconds) < 4) {
+		seconds = "0" + seconds
+	}
+	var time = minutes + ":" + seconds
+	draw_text_transformed(960, 1020, time, 0.25, 0.25, 0)
 }

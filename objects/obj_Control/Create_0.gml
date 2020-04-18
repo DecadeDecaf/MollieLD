@@ -8,6 +8,7 @@ audio_play_sound(snd_Game, 1, true)
 global.Muted = false
 
 global.FrameCount = 0
+global.Timer = 0
 global.Level = 1
 
 repeat (12) {
