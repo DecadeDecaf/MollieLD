@@ -33,7 +33,7 @@ if (m) {
 }
 
 if (space && room == rm_Menu) {
-	room_goto(rm_1)
+	room_goto(rm_Mollie)
 }
 
 if (esc) {

@@ -77,9 +77,17 @@ if (YV > 0) {
 		}
 	} else {
 		if (scr_Collision(bbox_right, bbox_bottom) || scr_Collision(x, bbox_bottom) || scr_Collision(bbox_left, bbox_bottom)) {
+			var tile = scr_Floor()
 			y -= YV
 			YV = 0
 			HeldUp = 0
+			if (tile == 4) {
+				YV = -16
+			} else if (tile == 5) {
+				XV += 2
+			} else if (tile == 6) {
+				XV -= 2
+			}
 		}
 	}
 } else if (YV < 0) {

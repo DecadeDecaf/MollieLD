@@ -20,12 +20,13 @@ if (room == rm_Menu) {
 		case 2: txt = "Ollie"; break
 		case 3: txt = "Double Ollie"; break
 		case 4: txt = "Stick the Landing"; break
-		case 5: txt = "Downstairs"; break
-		case 6: txt = "Upstairs?"; break
+		case 5: txt = "Transitions"; break
+		case 6: txt = "Downstairs"; break
 		case 7: txt = "Midair Jump"; break
-		case 8: txt = "Ollie Oop"; break
-		case 9: txt = "Transitions"; break
-		case 10: txt = "Ceiling"; break
+		case 8: txt = "Upstairs?"; break
+		case 9: txt = "Ollie Oop"; break
+		case 10: txt = "Speed"; break
+		case 11: txt = "Keep It Alive"; break
 	}
 	draw_set_color($858585)
 	draw_text_transformed(960, 20, "Level " + string(global.Level), 0.333, 0.333, 0)
