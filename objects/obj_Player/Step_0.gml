@@ -45,7 +45,11 @@ if (right) {
 	Facing = -1
 }
 
-XV /= 1.25
+if (sprite_index == spr_Dead) {
+	XV /= 1.25
+} else {
+	XV /= 1.2
+}
 
 YV = median(-20, YV, 20)
 XV = median(-12.5, XV, 12.5)
