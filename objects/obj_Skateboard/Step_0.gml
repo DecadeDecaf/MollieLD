@@ -5,6 +5,12 @@ XV /= 1.015
 YV = median(-20, YV, 20)
 XV = median(-20, XV, 20)
 
+if (XV > 0) {
+	Facing = 1
+} else if (XV < 0) {
+	Facing = -1
+}
+
 y += YV
 
 if (YV > 0) {

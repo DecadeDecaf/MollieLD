@@ -1,6 +1,16 @@
 var f = keyboard_check_pressed(ord("F"))
 var m = keyboard_check_pressed(ord("M"))
 var space = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
+var esc = keyboard_check_pressed(vk_escape)
+
+global.FrameCount += 1
+
+if (room == rm_Menu) {
+	if (global.FrameCount % 6 == 0) {
+		var spawnY = random_range(140, 420)
+		instance_create_depth(2048, spawnY, 0, obj_Speed)
+	}
+}
 
 if (f) {
 	var full = window_get_fullscreen()
@@ -24,4 +34,8 @@ if (m) {
 
 if (space && room == rm_Menu) {
 	room_goto(rm_1)
+}
+
+if (esc) {
+	game_end()
 }
