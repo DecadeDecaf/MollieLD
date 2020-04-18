@@ -63,6 +63,16 @@ if (YV > 0) {
 				y -= YV
 				YV = 0
 				HeldUp = 0
+				repeat (10) {
+					var dust = instance_create_depth(x, bbox_bottom, 0, obj_Dust)
+					if (choose(true, false)) {
+						dust.Direction = random_range(135, 180)
+						dust.Speed = random_range(4, 6)
+					} else {
+						dust.Direction = random_range(0, 45)
+						dust.Speed = random_range(4, 6)
+					}
+				}
 			}
 		}
 	} else {
