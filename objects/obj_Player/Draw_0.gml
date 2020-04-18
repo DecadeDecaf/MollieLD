@@ -1,13 +1,15 @@
 image_xscale = 0.225 * Facing
 
-if (Grounded) {
-	if (abs(XV) > 1) {
-		sprite_index = spr_Skating
+if (sprite_index != spr_Dead) {
+	if (Grounded) {
+		if (abs(XV) > 1) {
+			sprite_index = spr_Skating
+		} else {
+			sprite_index = spr_Idle
+		}
 	} else {
-		sprite_index = spr_Idle
+		sprite_index = spr_Jumping
 	}
-} else {
-	sprite_index = spr_Jumping
 }
 
 draw_self()

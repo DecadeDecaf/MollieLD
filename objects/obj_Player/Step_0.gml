@@ -5,6 +5,13 @@ var down = keyboard_check(ord("S")) || keyboard_check(vk_down) || gamepad_axis_v
 
 var board = instance_nearest(x, bbox_bottom, obj_Skateboard)
 
+if (sprite_index == spr_Dead) {
+	right = false
+	left = false
+	up = false
+	down = false
+}
+
 if (!scr_Collision(bbox_right, bbox_top) && !scr_Collision(x, bbox_top) && !scr_Collision(bbox_left, bbox_top)) {
 	if (up && Grounded) {
 		HeldUp = 10
@@ -49,7 +56,7 @@ if (YV > 0) {
 	if (!Grounded) {
 		if (scr_Collision(bbox_right, bbox_bottom) || scr_Collision(x, bbox_bottom) || scr_Collision(bbox_left, bbox_bottom)) {
 			scr_Die()
-		} else if (instance_exists(board)) {
+		} else if (instance_exists(board) && sprite_index != spr_Dead) {
 			if (position_meeting(bbox_right, bbox_bottom, board) || position_meeting(x, bbox_bottom, board) || position_meeting(bbox_left, bbox_bottom, board)) {
 				Grounded = true
 				instance_destroy(board)
