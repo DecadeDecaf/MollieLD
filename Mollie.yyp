@@ -258,7 +258,7 @@
             "Key": "868cd0d0-9ea9-4ae2-8b25-739307529a0c",
             "Value": {
                 "id": "f072bee6-d516-46f2-9105-0796a4464a9c",
-                "resourcePath": "rooms\\rm_DoubleOllie\\rm_DoubleOllie.yy",
+                "resourcePath": "rooms\\rm_DoubleTollie\\rm_DoubleTollie.yy",
                 "resourceType": "GMRoom"
             }
         },
@@ -268,6 +268,14 @@
                 "id": "7e3126d7-412c-4dcf-8790-6cdf9bf0359b",
                 "resourcePath": "scripts\\scr_Win\\scr_Win.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8f26292b-8fd5-4007-a12d-47f2034d4396",
+            "Value": {
+                "id": "711a183c-86bd-446f-a881-b4dd3fa3d126",
+                "resourcePath": "rooms\\rm_Tollie\\rm_Tollie.yy",
+                "resourceType": "GMRoom"
             }
         },
         {

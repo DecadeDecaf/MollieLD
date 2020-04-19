@@ -18,21 +18,22 @@ if (room == rm_Menu) {
 	switch (global.Level) {
 		case 1: txt = "Mollie"; break
 		case 2: txt = "Ollie"; break
-		case 3: txt = "Double Ollie"; break
-		case 4: txt = "Stick the Landing"; break
-		case 5: txt = "Transitions"; break
-		case 6: txt = "Downstairs"; break
-		case 7: txt = "Midair Jump"; break
-		case 8: txt = "Upstairs?"; break
-		case 9: txt = "Ollie Oop"; break
-		case 10: txt = "Speed"; break
-		case 11: txt = "Grind"; break
-		case 12: txt = "Wait For It"; break
-		case 13: txt = "Keep It Alive"; break
-		case 14: txt = "Race"; break
-		case 15: txt = "Cargo"; break
-		case 16: txt = "Tricks"; break
-		case 17: txt = "Upwards"; break
+		case 3: txt = "Tollie"; break
+		case 4: txt = "Double Tollie"; break
+		case 5: txt = "Stick the Landing"; break
+		case 6: txt = "Transitions"; break
+		case 7: txt = "Downstairs"; break
+		case 8: txt = "Midair Jump"; break
+		case 9: txt = "Upstairs?"; break
+		case 10: txt = "Ollie Oop"; break
+		case 11: txt = "Speed"; break
+		case 12: txt = "Grind"; break
+		case 13: txt = "Wait For It"; break
+		case 14: txt = "Keep It Alive"; break
+		case 15: txt = "Race"; break
+		case 16: txt = "Cargo"; break
+		case 17: txt = "Tricks"; break
+		case 18: txt = "Upwards"; break
 	}
 	if (room == rm_Ending) {
 		draw_sprite_ext(spr_Logo, 0, 960, 32, 0.2, 0.2, 0, -1, 1)
