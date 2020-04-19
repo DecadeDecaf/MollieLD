@@ -3,6 +3,7 @@ randomize()
 display_reset(8, true)
 draw_set_font(fnt_Font)
 draw_set_halign(fa_center)
+draw_set_circle_precision(64)
 
 gamepad_set_axis_deadzone(0, 0.25)
 

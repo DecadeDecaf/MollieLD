@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "884691fa-ca7d-444d-ab3f-eaf4c6326a1f",
+            "Value": {
+                "id": "1b20dfd3-ba25-4c66-bb62-40da1aa656e7",
+                "resourcePath": "rooms\\rm_DeadEnd\\rm_DeadEnd.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "8efabb90-665f-41e7-a41d-3de01a221da6",
             "Value": {
                 "id": "7e3126d7-412c-4dcf-8790-6cdf9bf0359b",
