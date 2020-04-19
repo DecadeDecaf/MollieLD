@@ -3,7 +3,7 @@ var map = layer_tilemap_get_id(lay)
 
 var offset = 0
 
-if (sprite_index == spr_Jumping) {
+if (sprite_index == spr_Jumping && argument[1] == bbox_bottom) {
 	offset = 45
 }
 

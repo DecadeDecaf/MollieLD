@@ -1,6 +1,6 @@
 var f = keyboard_check_pressed(ord("F"))
 var m = keyboard_check_pressed(ord("M"))
-var space = keyboard_check_pressed(vk_space) || gamepad_button_check_pressed(0, gp_face1)
+var space = keyboard_check_released(vk_space) || gamepad_button_check_released(0, gp_face1)
 var esc = keyboard_check_pressed(vk_escape)
 
 global.FrameCount += 1

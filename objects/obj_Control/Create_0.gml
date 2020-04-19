@@ -4,6 +4,8 @@ display_reset(8, true)
 draw_set_font(fnt_Font)
 draw_set_halign(fa_center)
 
+gamepad_set_axis_deadzone(0, 0.25)
+
 audio_play_sound(snd_Game, 1, true)
 global.Muted = false
 

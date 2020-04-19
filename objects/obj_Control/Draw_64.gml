@@ -26,9 +26,9 @@ if (room == rm_Menu) {
 		case 8: txt = "Upstairs?"; break
 		case 9: txt = "Ollie Oop"; break
 		case 10: txt = "Speed"; break
-		case 11: txt = "Wait For It"; break
-		case 12: txt = "Keep It Alive"; break
-		case 13: txt = "Grind"; break
+		case 11: txt = "Grind"; break
+		case 12: txt = "Wait For It"; break
+		case 13: txt = "Keep It Alive"; break
 		case 14: txt = "Race"; break
 		case 15: txt = "Tricks"; break
 	}
