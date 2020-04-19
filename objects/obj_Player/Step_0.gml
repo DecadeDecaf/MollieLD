@@ -62,10 +62,12 @@ if (YV > 0) {
 		if (scr_Collision(bbox_right, bbox_bottom) || scr_Collision(x, bbox_bottom) || scr_Collision(bbox_left, bbox_bottom)) {
 			scr_Die()
 		} else if (instance_exists(board) && sprite_index != spr_Dead) {
-			if (position_meeting(bbox_right, bbox_bottom, board) || position_meeting(x, bbox_bottom, board) || position_meeting(bbox_left, bbox_bottom, board)) {
+			if (position_meeting(bbox_right, bbox_bottom, board) || position_meeting(x, bbox_bottom, board) || position_meeting(bbox_left, bbox_bottom, board) || position_meeting(bbox_right, bbox_bottom - 45, board) || position_meeting(x, bbox_bottom - 45, board) || position_meeting(bbox_left, bbox_bottom - 45, board)) {
 				Grounded = true
 				instance_destroy(board)
-				y -= YV
+				while (scr_Collision(bbox_right, bbox_bottom + 45) || scr_Collision(x, bbox_bottom + 45) || scr_Collision(bbox_left, bbox_bottom + 45)) {
+					y -= YV
+				}
 				YV = 0
 				HeldUp = 0
 				repeat (10) {
@@ -133,7 +135,7 @@ if (bbox_top > room_height) {
 	scr_Die()
 }
 
-if (scr_Win(bbox_right, bbox_bottom) || scr_Win(x, bbox_bottom) ||scr_Win(bbox_left, bbox_bottom)) {
+if (scr_Win(bbox_right, bbox_bottom) || scr_Win(x, bbox_bottom) ||scr_Win(bbox_left, bbox_bottom) || scr_Win(bbox_right, bbox_bottom - 45) || scr_Win(x, bbox_bottom - 45) ||scr_Win(bbox_left, bbox_bottom - 45)) {
 	if (room_exists(room_next(room)) && sprite_index != spr_Dead) {
 		room_goto_next()
 		global.Level += 1
