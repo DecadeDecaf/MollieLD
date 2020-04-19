@@ -103,6 +103,12 @@ if (YV > 0) {
 			YV = 0
 			HeldUp = 0
 		}
+	} else {
+		if (scr_Collision(bbox_right, bbox_top) || scr_Collision(x, bbox_top) || scr_Collision(bbox_left, bbox_top)) {
+			y -= YV
+			YV = 0
+			HeldUp = 0
+		}
 	}
 }
 
