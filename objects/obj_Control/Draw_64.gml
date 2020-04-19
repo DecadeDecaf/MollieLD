@@ -35,6 +35,7 @@ if (room == rm_Menu) {
 		case 17: txt = "Upwards"; break
 		case 18: txt = "Tricks"; break
 		case 19: txt = "Dead End"; break
+		case 20: txt = "Finollie"; break
 	}
 	if (room == rm_Ending) {
 		draw_sprite_ext(spr_Logo, 0, 960, 32, 0.2, 0.2, 0, -1, 1)

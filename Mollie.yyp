@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "d324e7f5-2a75-452d-bf93-be9b40bdd6d3",
+            "Value": {
+                "id": "ad0a1b7d-bcc7-4054-a557-d6288949e188",
+                "resourcePath": "rooms\\rm_Finollie\\rm_Finollie.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "d77d9f5b-8424-42bb-8bac-23986b8da45d",
             "Value": {
                 "id": "298272b5-0cb7-4498-8642-dd33f1e5693c",
