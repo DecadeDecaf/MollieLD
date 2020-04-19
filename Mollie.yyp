@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "4fbc52fb-04bd-4e08-bc5e-7e190feccee5",
+            "Value": {
+                "id": "ce85d1b2-38f8-4a89-b487-6d31039032be",
+                "resourcePath": "sounds\\snd_Skating\\snd_Skating.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "523c5aae-7de4-45cf-81ca-51eb182debd1",
             "Value": {
                 "id": "8ea915bf-b1cb-42cf-ab9f-bb277ad68b72",
@@ -303,6 +311,14 @@
             }
         },
         {
+            "Key": "9fee981c-513b-4ffa-a384-55d50c883637",
+            "Value": {
+                "id": "d5919bb7-eb28-4435-85d0-4f4714be4f60",
+                "resourcePath": "sounds\\snd_Land\\snd_Land.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "a0282cc9-a926-46ec-b341-555f04403146",
             "Value": {
                 "id": "a712d9ac-b3ae-45c7-a89d-6a24dc13ae7b",
@@ -428,6 +444,22 @@
                 "id": "73f132d1-0866-43ac-997c-2332044b2eac",
                 "resourcePath": "options\\windows\\options_windows.yy",
                 "resourceType": "GMWindowsOptions"
+            }
+        },
+        {
+            "Key": "cd22b900-0f63-4d31-a4ac-551c1a8deeb6",
+            "Value": {
+                "id": "b8a244b4-2581-43c5-96a0-71940b620f7c",
+                "resourcePath": "sounds\\snd_Jump\\snd_Jump.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "d1474c61-48f5-466d-98b5-183ea895ada8",
+            "Value": {
+                "id": "9a9bc747-9ff4-4ce3-976e-43af51dc9540",
+                "resourcePath": "sounds\\snd_Die\\snd_Die.yy",
+                "resourceType": "GMSound"
             }
         },
         {

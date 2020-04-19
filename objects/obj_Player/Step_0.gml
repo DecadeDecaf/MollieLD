@@ -23,6 +23,7 @@ if (!scr_Collision(bbox_right, bbox_top) && !scr_Collision(x, bbox_top) && !scr_
 		ollie.YV = oldYV / 2
 		ollie.XV = XV * 1.25
 		Grounded = false
+		audio_play_sound(snd_Jump, 1, false)
 	} else if (up && HeldUp > 0) {
 		YV -= 1
 		HeldUp -= 1
@@ -77,6 +78,7 @@ if (YV > 0) {
 						dust.Speed = random_range(4, 6)
 					}
 				}
+				audio_play_sound(snd_Land, 1, false)
 			}
 		}
 	} else {
@@ -119,6 +121,10 @@ if ((XV > 0 && scr_Collision(bbox_right, y)) || (XV < 0 && scr_Collision(bbox_le
 if ((XV > 0 && scr_Collision(bbox_right, bbox_top)) || (XV < 0 && scr_Collision(bbox_left, bbox_top))) {
 	x -= XV
 	XV = 0
+}
+
+if (bbox_top > room_height) {
+	scr_Die()
 }
 
 if (scr_Win(bbox_right, bbox_bottom) || scr_Win(x, bbox_bottom) ||scr_Win(bbox_left, bbox_bottom)) {
