@@ -139,5 +139,6 @@ if (scr_Win(bbox_right, bbox_bottom) || scr_Win(x, bbox_bottom) ||scr_Win(bbox_l
 	if (room_exists(room_next(room)) && sprite_index != spr_Dead) {
 		room_goto_next()
 		global.Level += 1
+		global.Tries = 0
 	}
 }

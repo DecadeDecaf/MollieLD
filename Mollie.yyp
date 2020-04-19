@@ -215,6 +215,14 @@
             }
         },
         {
+            "Key": "6fd1562a-d6d1-4756-8d6d-8bc82d5a804f",
+            "Value": {
+                "id": "3d1fcb28-42d9-4842-b8ed-5d7386f97454",
+                "resourcePath": "objects\\obj_Graffiti\\obj_Graffiti.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "762e98ac-27dc-4b8e-a0ab-3d80ce56044f",
             "Value": {
                 "id": "71538f02-1d03-43e0-bbae-afbb7bc363c2",
@@ -404,6 +412,14 @@
                 "id": "aa9e7581-6b8e-4fda-ae78-f8bcd537e427",
                 "resourcePath": "rooms\\rm_Upwards\\rm_Upwards.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "b21eda17-6c46-495f-af89-e7f543fa925f",
+            "Value": {
+                "id": "3d58bd95-c9bd-4727-8559-827a877593d6",
+                "resourcePath": "sprites\\spr_Graffiti\\spr_Graffiti.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
