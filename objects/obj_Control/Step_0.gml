@@ -10,7 +10,7 @@ if (room == rm_Menu) {
 		var spawnY = random_range(140, 420)
 		instance_create_depth(2048, spawnY, 0, obj_Speed)
 	}
-} else {
+} else if (room != rm_Ending) {
 	if (global.FrameCount % 6 == 0) {
 		global.Timer += 0.1
 	}

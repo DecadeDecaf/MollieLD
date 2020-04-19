@@ -30,13 +30,20 @@ if (room == rm_Menu) {
 		case 12: txt = "Wait For It"; break
 		case 13: txt = "Keep It Alive"; break
 		case 14: txt = "Race"; break
-		case 15: txt = "Tricks"; break
-		case 16: txt = "Upwards"; break
+		case 15: txt = "Cargo"; break
+		case 16: txt = "Tricks"; break
+		case 17: txt = "Upwards"; break
 	}
-	draw_set_color($858585)
-	draw_text_transformed(960, 20, "Level " + string(global.Level), 0.333, 0.333, 0)
-	draw_set_color($5D5D5D)
-	draw_text_transformed(960, 60, txt, 0.25, 0.25, 0)
+	if (room == rm_Ending) {
+		draw_sprite_ext(spr_Logo, 0, 960, 32, 0.2, 0.2, 0, -1, 1)
+		draw_set_color($5D5D5D)
+		draw_text_transformed(960, 60, "Thanks for playing!", 0.25, 0.25, 0)
+	} else {
+		draw_set_color($858585)
+		draw_text_transformed(960, 20, "Level " + string(global.Level), 0.333, 0.333, 0)
+		draw_set_color($5D5D5D)
+		draw_text_transformed(960, 60, txt, 0.25, 0.25, 0)
+	}
 	var minutes = string(floor(global.Timer / 60))
 	var seconds = string_format(global.Timer % 60, 1, 1)
 	if (string_length(seconds) < 4) {

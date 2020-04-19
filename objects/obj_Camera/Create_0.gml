@@ -1,3 +1,6 @@
+x = obj_Player.x
+y = obj_Player.y
+
 Camera = camera_create()
 
 var vm = matrix_build_lookat(x, y, -10, x, y, 0, 0, 1, 0)

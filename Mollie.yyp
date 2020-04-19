@@ -191,6 +191,14 @@
             }
         },
         {
+            "Key": "62076e5a-7b7c-447a-8b83-08ed0b751aa9",
+            "Value": {
+                "id": "bb20fadf-d465-4ede-a41f-9a2702b0b671",
+                "resourcePath": "rooms\\rm_Cargo\\rm_Cargo.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "6c1d47cf-8c9e-438b-a39a-e35dba6178fd",
             "Value": {
                 "id": "cf61b337-ec2b-41b6-a25d-0dd30db33e9a",
@@ -476,6 +484,14 @@
                 "id": "298272b5-0cb7-4498-8642-dd33f1e5693c",
                 "resourcePath": "objects\\obj_Camera\\obj_Camera.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "e81273a8-1d67-436b-9b6f-75f1ac34f322",
+            "Value": {
+                "id": "7230e03d-0bc3-4446-b5e4-fab50ecf58e3",
+                "resourcePath": "rooms\\rm_Ending\\rm_Ending.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
