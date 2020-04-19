@@ -6,7 +6,7 @@ if (sprite_index != spr_Dead) {
 	if (Grounded) {
 		if (abs(XV) > 1) {
 			sprite_index = spr_Skating
-			if (image_index == 3) {
+			if (image_index == 2) {
 				repeat (5) {
 					var dust = instance_create_depth(x, bbox_bottom, 0, obj_Dust)
 					if (XV > 0) {
@@ -23,6 +23,8 @@ if (sprite_index != spr_Dead) {
 					audio_sound_gain(snd_Skating, 1, 50)
 					audio_play_sound(snd_Skating, 1, true)
 				}
+			} else {
+				stop = true
 			}
 		} else {
 			sprite_index = spr_Idle

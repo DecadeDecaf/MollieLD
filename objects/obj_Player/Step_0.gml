@@ -128,7 +128,7 @@ if (bbox_top > room_height) {
 }
 
 if (scr_Win(bbox_right, bbox_bottom) || scr_Win(x, bbox_bottom) ||scr_Win(bbox_left, bbox_bottom)) {
-	if (room_exists(room_next(room))) {
+	if (room_exists(room_next(room)) && sprite_index != spr_Dead) {
 		room_goto_next()
 		global.Level += 1
 	}
