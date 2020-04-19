@@ -3,7 +3,7 @@ if (room != rm_Menu) {
 		with (obj_Graffiti) {
 			instance_destroy()
 		}
-		repeat (6) {
+		repeat (4) {
 			var spawnX = random_range(0, room_width)
 			var spawnY = random_range(0, room_height)
 			instance_create_depth(spawnX, spawnY, 101, obj_Graffiti)
