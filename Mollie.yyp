@@ -509,6 +509,14 @@
                 "resourcePath": "sprites\\spr_Tiles\\spr_Tiles.yy",
                 "resourceType": "GMSprite"
             }
+        },
+        {
+            "Key": "fe33ceb0-164e-4d72-876c-cee3e24fa384",
+            "Value": {
+                "id": "e685068b-de2d-419d-9b9f-049444e3b576",
+                "resourcePath": "rooms\\rm_Grind\\rm_Grind.yy",
+                "resourceType": "GMRoom"
+            }
         }
     ],
     "script_order": [
