@@ -40,6 +40,6 @@ if (space && room == rm_Menu) {
 	room_goto(rm_Mollie)
 }
 
-if (esc) {
+if (esc && room == rm_Menu) {
 	game_end()
 }
