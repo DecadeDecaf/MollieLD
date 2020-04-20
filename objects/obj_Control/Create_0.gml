@@ -14,6 +14,7 @@ global.FrameCount = 0
 global.Timer = 0
 global.Level = 1
 global.Tries = 0
+global.ESC = 0
 
 repeat (12) {
 	var spawnX = random_range(-128, 2048)

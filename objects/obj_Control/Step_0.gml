@@ -40,6 +40,14 @@ if (space && room == rm_Menu) {
 	room_goto(rm_Mollie)
 }
 
-if (esc && room == rm_Menu) {
-	game_end()
+if (esc) {
+	if (room == rm_Menu) {
+		game_end()
+	} else {
+		global.ESC += 1
+		alarm[0] = 180
+		if (global.ESC >= 2) {
+			game_end()
+		}
+	}
 }

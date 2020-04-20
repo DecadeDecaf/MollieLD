@@ -54,4 +54,8 @@ if (room == rm_Menu) {
 	}
 	var time = minutes + ":" + seconds
 	draw_text_transformed(960, 1020, time, 0.25, 0.25, 0)
+	if (global.ESC > 0) {
+		draw_set_color($858585)
+		draw_text_transformed(960, 500, "Press ESC Again to Quit (" + string(ceil(alarm[0] / 60)) + ")", 0.5, 0.5, 0)
+	}
 }
